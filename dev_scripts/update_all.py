@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 aas-core3.1-csharp AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 """Update to the latest meta-model and the latest test data."""
 
 import argparse

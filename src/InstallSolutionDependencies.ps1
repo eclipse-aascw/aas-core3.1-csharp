@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 aas-core3.1-csharp AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 <#
 .SYNOPSIS
 This script runs all the pre-merge checks locally.

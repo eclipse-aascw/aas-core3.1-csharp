@@ -1,5 +1,9 @@
 #!/usr/bin/env pwsh
 
+# SPDX-FileCopyrightText: 2025 aas-core3.1-csharp AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 <#
 This script runs locally the checks from the continous integration.
 #>
