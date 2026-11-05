@@ -1,0 +1,69 @@
+# SPDX-FileCopyrightText: 2025 aas-core3.1-csharp AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
+version = 1
+
+# Prose and metadata where a header would end up in the rendered output
+# (e.g., README shown on GitHub and NuGet, the documentation), or which can
+# not carry a comment (JSON, images).
+[[annotations]]
+path = [
+    "AUTHORS",
+    "README.md",
+    "doc/**/*.md",
+    "doc/source/docfx.json",
+    "doc/source/images/**",
+    "src/.config/dotnet-tools.json",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 aas-core3.1-csharp AUTHORS"
+SPDX-License-Identifier = "MIT"
+
+# The solution file and the user settings are written by Visual Studio, Rider
+# and ReSharper, which would drop or misplace a header.
+[[annotations]]
+path = [
+    "src/aas-core3.1-csharp.sln",
+    "src/*.sln.DotSettings.user",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 aas-core3.1-csharp AUTHORS"
+SPDX-License-Identifier = "MIT"
+
+# A plain word list, one entry per line, so a header would be read as words.
+[[annotations]]
+path = "src/AdditionalVerbsInImperativeMood.txt"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 aas-core3.1-csharp AUTHORS"
+SPDX-License-Identifier = "MIT"
+
+# The snippets are inserted verbatim into the generated code by aas-core-codegen,
+# so they must not carry a header of their own.
+[[annotations]]
+path = "dev_scripts/codegen/snippets/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 aas-core3.1-csharp AUTHORS"
+SPDX-License-Identifier = "MIT"
+
+# Test data and the recorded test outputs are generated and compared
+# byte-by-byte, and JSON can not carry a comment.
+[[annotations]]
+path = "test_data/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 aas-core3.1-csharp AUTHORS"
+SPDX-License-Identifier = "MIT"
+
+# The JSON and XML test inputs are downloaded unchanged from the releases of
+# aas-core-testdatagen by dev_scripts/download_latest_test_data.py, so we also
+# attribute them to its authors. The recorded outputs next to them (*.errors,
+# *.exception) are covered by the annotation above. This annotation comes last
+# so that it takes precedence for the matching files.
+[[annotations]]
+path = ["test_data/Json/**/*.json", "test_data/Xml/**/*.xml"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = [
+    "2025 aas-core3.1-csharp AUTHORS",
+    "2025 aas-core-testdatagen AUTHORS",
+]
+SPDX-License-Identifier = "MIT"
