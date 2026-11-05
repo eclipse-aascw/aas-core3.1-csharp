@@ -53,17 +53,3 @@ path = "test_data/**"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2025 aas-core3.1-csharp AUTHORS"
 SPDX-License-Identifier = "MIT"
-
-# The JSON and XML test inputs are downloaded unchanged from the releases of
-# aas-core-testdatagen by dev_scripts/download_latest_test_data.py, so we also
-# attribute them to its authors. The recorded outputs next to them (*.errors,
-# *.exception) are covered by the annotation above. This annotation comes last
-# so that it takes precedence for the matching files.
-[[annotations]]
-path = ["test_data/Json/**/*.json", "test_data/Xml/**/*.xml"]
-precedence = "aggregate"
-SPDX-FileCopyrightText = [
-    "2025 aas-core3.1-csharp AUTHORS",
-    "2025 aas-core-testdatagen AUTHORS",
-]
-SPDX-License-Identifier = "MIT"
